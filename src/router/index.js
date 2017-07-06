@@ -140,6 +140,13 @@ export default new Router({
           })
         }
       }]
-    }
-  ]
+    },
+    {
+      path: '/shuqian',
+      component: function (resolve) {
+        require.ensure([], function (require) {
+          resolve(require('../components/shuqian/shuqian.vue'))
+        })
+      }
+    }]
 })

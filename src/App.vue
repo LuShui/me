@@ -31,7 +31,6 @@ html,body {
   -webkit-touch-callout:none;
   -webkit-text-size-adjust:none;
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-  -webkit-user-select:none;
   background-color: white;
 }
 nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{
