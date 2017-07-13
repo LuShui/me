@@ -38,17 +38,23 @@
       }
     },
     created: function () {
-      this.$http.post('home/getsoure', qs.stringify({
-        type: 1
-      })).then((res) => {
+      if (this.$store.state.javascriptarr.length > 0) {
+        this.array = this.$store.state.javascriptarr
         this.loadshow = false
-        this.array = res.data.ctn
-        if (this.array.length > 0) {
-          this.show = false
-        } else {
-          this.show = true
-        }
-      })
+      } else {
+        this.$http.post('home/getsoure', qs.stringify({
+          type: 1
+        })).then((res) => {
+          this.loadshow = false
+          this.array = res.data.ctn
+          this.$store.commit('javascriptarr', this.array)
+          if (this.array.length > 0) {
+            this.show = false
+          } else {
+            this.show = true
+          }
+        })
+      }
     }
   }
 </script>

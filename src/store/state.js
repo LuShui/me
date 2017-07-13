@@ -41,7 +41,13 @@ const state = {
   age: 23,
   index: 0,
   isreload: false,
-  type: array
+  type: array,
+  javascriptarr: [],
+  cssarr: [],
+  htmlarr: [],
+  gulparr: [],
+  plugarr: [],
+  phparr: []
 }
 
 export default state

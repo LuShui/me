@@ -8,7 +8,6 @@ import VueQuillEditor from 'vue-quill-editor'
 Vue.use(VueQuillEditor)
 axios.defaults.baseURL = 'http://lushui.space/tpnote/index.php/home/'
 Vue.prototype.$http = axios
-// Vue.prototype.url = 'http://lushui.space'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
