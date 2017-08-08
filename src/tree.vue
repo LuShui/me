@@ -1,13 +1,6 @@
 <template>
  <div id="treebox">
    <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
-   <i class="item"></i>
  </div>
 </template>
 
@@ -51,38 +44,4 @@
       -webkit-transform: translate(0px, 650px)  rotatex(10deg);
     }
   }
-
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  .item:nth-of-type(1){
-    right: 30px;
-  }
-  
-
 </style>
