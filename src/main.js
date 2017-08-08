@@ -6,7 +6,7 @@ import axios from 'axios'
 import VueQuillEditor from 'vue-quill-editor'
 // use
 Vue.use(VueQuillEditor)
-axios.defaults.baseURL = 'http://lushui.space/tpnote/index.php/home/'
+axios.defaults.baseURL = 'http://www.lushui.space/tpnote/index.php/home/'
 Vue.prototype.$http = axios
 /* eslint-disable no-new */
 new Vue({
@@ -14,6 +14,6 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App } 
+  components: { App }
 })
 
