@@ -1,4 +1,5 @@
 FROM node:8.7.0
+RUN wget update \    && wget install -y nginx
 WORKDIR /app
 COPY . /app/
 EXPOSE 80
