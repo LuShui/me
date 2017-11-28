@@ -3,7 +3,6 @@
     <div id="nav">
       <ul>
         <ul>
-
         </ul>
       </ul>
     </div>
@@ -12,15 +11,11 @@
     </div>
   </div>
 </template>
-
 <script>
-
-  export default {
-    name: 'scroller'
-  }
-
+export default {
+  name: 'scroller'
+}
 </script>
-
 <style scoped lang="scss" rel="stylesheet/scss">
   .cut{
     display: -webkit-box;
