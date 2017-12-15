@@ -50,7 +50,7 @@ export default {
       this.issh = !this.issh
     },
     admingdunc: function () {
-      window.location.href = 'http://lushui.space/tpnote/index.php/home/login/login'
+      window.location.href = 'http://admin.lushui.space/index.php/home/login/login'
     }
   },
   created: function () {
