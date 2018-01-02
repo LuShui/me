@@ -1,18 +1,13 @@
 <template>
   <div id="app">
     <router-view id="view"></router-view>
-    <tree id="tree"></tree>
   </div>
 </template>
 
 <script>
 import 'babel-polyfill'
-import tree from './tree.vue'
 export default {
-  name: 'app',
-  components: {
-    tree
-  }
+  name: 'app'
 }
 </script>
 <style >
@@ -20,14 +15,7 @@ export default {
 position: relative;
   z-index: 100;
 }
-#tree{
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

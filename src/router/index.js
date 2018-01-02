@@ -85,46 +85,6 @@ export default new Router({
       }
     },
     {
-      path: '/mang',
-      redirect: '/notemanage',
-      component: function (resolve) {
-        require.ensure([], function (require) {
-          resolve(require('../components/admin/mang.vue'))
-        })
-      },
-      children: [{
-        path: '/notemanage',
-        component: function (resolve) {
-          require.ensure([], function (require) {
-            resolve(require('../components/admin/children/notemanage.vue'))
-          })
-        }
-      }, {
-        path: '/note',
-        component: function (resolve) {
-          require.ensure([], function (require) {
-            resolve(require('../components/admin/children/note.vue'))
-          })
-        }
-      },
-      {
-        path: '/url',
-        component: function (resolve) {
-          require.ensure([], function (require) {
-            resolve(require('../components/admin/children/urlview.vue'))
-          })
-        }
-      }]
-    },
-    {
-      path: '/index',
-      component: function (resolve) {
-        require.ensure([], function (require) {
-          resolve(require('../components/admin/index.vue'))
-        })
-      }
-    },
-    {
       path: '/demo',
       redirect: '/scroller',
       component: function (resolve) {
